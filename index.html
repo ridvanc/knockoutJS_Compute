@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript" src="Scripts/jquery-2.0.3.js"></script>
+    <script type="text/javascript" src="Scripts/knockout-3.0.0.js"></script>
+    <script src="Scripts/knockoutCompute.js"></script>
+</head>
+<body>
+    <div id="main">
+        <table>
+            <tr>
+                <td colspan="6">Text Compute
+                </td>
+            </tr>
+            <tr>
+                <td>FirstText</td>
+                <td>
+                    <input type="text" data-bind="value: firstText, valueUpdate: 'afterkeydown'" />
+                </td>
+                <td>SecondText</td>
+                <td>
+                    <input type="text" data-bind="value: secondText, valueUpdate: 'afterkeydown'" />
+                </td>
+                <td>Result :
+                </td>
+                <td>
+                    <span data-bind="text: textCompute"></span>
+                </td>
+            </tr>
+             <tr>
+                <td colspan="6">Number Totals
+                </td>
+            </tr>
+            <tr>
+                <td>FirstNumber</td>
+                <td>
+                    <input type="text" data-bind="value: firstNumber, valueUpdate: 'afterkeydown'" />
+                </td>
+                <td>SecondNumber</td>
+                <td>
+                    <input type="text" data-bind="value: secondNumber, valueUpdate: 'afterkeydown'" />
+                </td>
+                <td>Result :
+                </td>
+                <td>
+                    <span data-bind="text: numberTotal"></span>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
